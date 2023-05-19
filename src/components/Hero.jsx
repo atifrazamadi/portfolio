@@ -25,6 +25,7 @@ const Hero = () => {
             A web developer who specializes in developing user{" "}
             <br className="sm:block hidden" />
             interfaces and web applications using React.
+            
           </p>
         </div>
       </div>

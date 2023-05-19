@@ -19,12 +19,14 @@ const Computers = ({ isMobile }) => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      <primitive
+      
+      <primitive 
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3.25, -2.2] : [0, -3.75, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
+      
     </mesh>
   );
 };
@@ -34,7 +36,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
    
-    const mediaQuery = window.matchMedia("(max-width: 500px) ");
+    const mediaQuery = window.matchMedia("(max-width: 20px) ");
 
 
    
@@ -60,7 +62,7 @@ const ComputersCanvas = () => {
       shadows
       dpr={[1, 2]}
       camera={{
-        position: isMobile ? [20, 9, 18] : [20, 3, 5],
+        position: isMobile ? [20, 19, 20] : [20, 8, 12],
         fov: 25
       }}
       gl={{ preserveDrawingBuffer: true }}
